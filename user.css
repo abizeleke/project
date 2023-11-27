@@ -1,0 +1,631 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+.navigBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 9%;
+}
+.navigBar img{
+        display: none;
+    }
+.navigBar .div1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+}
+.navigBar .div1 img{
+    display: flex;
+    width: 27px;
+    border-radius: 14px;
+    margin: 0px 5px 0px 5px;
+}
+.navigBar .div1 p{
+    font-weight: 600;
+    color: rgb(59, 4, 45);
+    font-size: 17px;
+}
+.navigBar .div2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    width: 70%;
+    height: 100%;
+}
+.navigBar .div2 button{
+    padding: 4px;
+    height:25px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #68a1eb;
+    color: white;
+    font-size: 16px;
+}
+.navigBar .div3{
+    display: none;
+    width: 10%;
+}
+.navigBar .div3 .menuBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+}
+.navigBar .div3 .menuBtn img{
+    display: flex;
+    width: 40px;
+}
+.navigBar .div4{
+    display: flex;
+    width: 10%;
+}
+.navigBar .div4 .menuBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+}
+.navigBar .div4 .menuBtn img{
+    display: flex;
+    width: 40px;
+}
+.navigBar .div4{
+    display: flex;
+    width: 10px;
+}
+.dropDown1{
+    display: none;
+    position: absolute;  
+    right: 12px;
+    top: 7%;
+    z-index: 100;
+    padding: 5px;
+    width: 200px;
+    height: 90px;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+}
+.dropDown1 li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.dropDown1 li a{
+    text-decoration: none;
+}
+.dropDown1 li button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 5px;
+    height: 22px;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 5px;
+}
+.dropDown{
+    display: none;
+    position: absolute;  
+    right: 12px;
+    top: 7%;
+    z-index: 100;
+    padding: 5px;
+    width: 200px;
+    height: 190px;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+}
+.dropDown li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.dropDown li a{
+    text-decoration: none;
+}
+.dropDown li button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 5px;
+    height: 22px;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 5px;
+}
+.dropDown li button:hover{
+    background-color: #79acee;
+}
+.dropDown li button:focus{
+    background-color: #7eda6c;
+}
+.dropDown1 li button:hover{
+    background-color: #79acee;
+}
+.dropDown1 li button:focus{
+    background-color: #7eda6c;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 91%;
+    background-color: #fcfafa;
+    background: url("icon/img4.jpg")no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home{
+    display: flex;
+    background-color: rgb(204, 230, 180);
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.home .wellcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+    margin: 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    font-size: 20px;
+    font-weight: 600;
+    color: #23a51f;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home .events{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 10px;
+    height: 100%;
+    margin: 10px;
+    border-radius: 20px;
+    overflow-y: auto;
+    backdrop-filter: blur(15px);
+}
+.home .events .p0{
+    font-size: 20px;
+    font-weight: 550;
+    margin: 8px;
+    color: rgb(205, 250, 43);
+    margin-left: 40px;
+}
+.home .events span{
+    display: flex;
+    flex-direction: row;
+}
+.home .events .evnt1{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: rgb(184, 200, 224);
+    margin: 5px;
+}
+.home .events .evnt1 .p1{
+    font-size: 17px;
+    font-weight: 550;
+    margin: 2px 0px 4px 0px;
+    color: rgb(58, 36, 36);
+}
+.home .events .evnt1 .p2{
+    font-size: 16px;
+    font-weight: 550;
+    margin: 2px 0px 4px 0px;
+    color: rgb(95, 54, 54);
+}
+
+.message{
+    display: none;
+    background-color: rgb(159, 231, 207);
+    align-items: center;
+    justify-content: center;
+}
+.message .message1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e1eee1;
+    height: 86%;
+    width: 330px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.message1 .viewbox{
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 90%;
+    padding: 5px;
+    border-radius: 10px;
+    overflow-y: auto;
+    box-shadow: 0px 0px 10px gray;
+    margin: 0;
+   
+}
+.message1 .viewbox1{
+    padding: 5px;
+    border-radius: 5px;
+    margin: 3px;
+    background-color:  rgb(179, 184, 219);
+    
+}
+.message1 .viewbox1 div{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 10px;
+    color: #073a05;
+    padding-right: 15px;
+}
+.message1 .textbox1{
+    display: flex;    
+    background: transparent;
+    backdrop-filter: blur(10px);
+    padding: 8px;
+    border-radius: 10px;
+    width: 100%;
+    height: 10%;
+    overflow-y: auto;
+    box-shadow: 0px 0px 10px gray;
+    margin: 3px;
+}
+.message1 .textbox1 form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.message1 .textbox1 form .b1{
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    padding: 6px; 
+}
+.message1 .textbox1 form .b2{
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+    background-color: #663be7;
+    color: white;
+    margin: 4px;
+}
+.message1 .viewbox .p1 {
+    margin: 1px 1px 1px 5px;
+    color: black;
+    font-size: 13px;   
+}
+.message1 .viewbox .p2{
+    margin: 1px;
+    padding: 10px;
+    color: #413f3f;
+    border-radius: 5px;
+    margin: 5px 5px 5px 5px;
+    padding: 3px 3px 3px 3px;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+.feedback{
+    display: none;
+    background-color: rgb(183, 236, 236);
+    align-items: center;
+    justify-content: center;
+}
+.feedback p{
+    font-size: 20px;
+    font-weight: 550;
+    color: #f70707;
+    margin: 7px;
+
+}
+.feedback .box1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 82%;
+    background-color: rgb(143, 207, 236);
+    border-radius: 20px;
+}
+.feedback .box1 form{
+    display: flex;
+    flex-direction: column;
+}
+.feedback .box1 form label{
+    font-size: 17px;
+    font-weight: 600;
+    color: #0c6109;
+    margin-left: 10px;
+}
+.feedback .box1 form input{
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    margin: 5px;
+}
+.feedback .box1 form .description{
+    width: 200px;
+    height: 70px;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    align-items: start;
+    justify-content: start;
+}
+.feedback .box1 form .submit{
+    width: 120px;
+    height: 27px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background-color: rgb(7, 44, 100);
+    padding: 3px;
+    font-weight: 550;
+    margin-left: 50px;
+}
+.profile{
+    display: none;
+    background-color: rgb(143, 207, 236);
+    align-items: center;
+    justify-content: center;
+}
+.profile .p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #2bb926;
+    margin: 5px;
+}
+.profile .profile1{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 241, 241);
+    padding: 10px;
+    border-radius: 10px;    
+} 
+.profile .profile1 .a1{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 241, 241);
+    padding: 7px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px gray;
+    font-weight: 600;
+    font-size: 15px;
+}
+.profile .profile1 .a2{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 241, 241);
+    padding: 7px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px gray;
+    font-weight: 500;
+    font-size: 15px;
+}
+.profile .profile1 div{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(235, 227, 227);
+    backdrop-filter: blur(20px);
+    margin: 3px;
+    padding: 0;
+    border-radius: 5px;      
+}
+.profile .profile1 button{
+    background-color: #c0b4e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    width: 150px;
+    height: 25px;
+    border: none;
+    margin: 7px;
+    padding: 4px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px rgb(153, 133, 133);
+    font-weight: 550;
+    font-size: 16px;
+}
+.profile .profile2{
+    display: none;
+    flex-direction: column;
+    background-color: rgb(245, 241, 241);
+    padding: 10px;
+    border-radius: 10px;    
+} 
+.profile .profile2 .a1{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 241, 241);
+    padding: 7px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px gray;
+    font-weight: 600;
+    font-size: 15px;
+}
+.profile .profile2 .a2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(245, 241, 241);
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px gray;
+    font-weight: 500;
+    font-size: 15px;
+    height: 70%;
+}
+.profile .profile2 .a2 input{
+    height: 95%;
+    border: none;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 3px;
+    padding: 3px;
+    
+}
+.profile .profile2 div{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(235, 227, 227);
+    backdrop-filter: blur(20px);
+    margin: 3px;
+    padding: 0;
+    border-radius: 5px;      
+}
+.profile .profile2 button{
+    background-color: #c0b4e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    width: 150px;
+    height: 25px;
+    border: none;
+    margin: 7px;
+    padding: 4px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px rgb(153, 133, 133);
+    font-weight: 550;
+    font-size: 16px;
+}
+.changePassword{
+    display: none;
+    background-color: rgb(143, 207, 236);
+    align-items: center;
+    justify-content: center;
+}
+.changePassword form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(245, 241, 241);
+    padding: 10px;
+    border-radius: 10px;    
+}
+.changePassword form h4{
+    font-size: 18px;
+    font-weight: 550;
+    color: #23a51f;
+}
+.changePassword form .h5{
+    font-size: 18px;
+    font-weight: 550;
+    color: #a70c0c;
+}
+.changePassword form input{
+    margin: 4px;
+    padding-left: 10px;
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    font-size: 19px;
+}
+.changePassword form .secQstn{
+    margin: 4px;
+    padding-left: 10px;
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    font-size: 19px;
+}
+.changePassword form .submit1{
+    margin: 7px;
+    width: 100px;
+    height: 37px;
+    font-size: 17px;
+    font-weight: 600; 
+    color: white;
+    background-color: #3333ff;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+@media(max-width: 600px){
+    .home .wellcome{
+        display: none;
+    }
+    .home .events{
+        width: 90%;
+    }
+    .navigBar .div1{
+        width: 85%;
+        height: 100%;
+        justify-content: start;
+        padding-left: 15px;
+    }
+    .navigBar .div3 {
+        display: flex;
+        width: 15%;
+    }
+    .navigBar .div2{
+        display: none;
+    } 
+    .dropDown1{
+        display: none; 
+    }
+    .navigBar .div4{
+        display: none;
+    }     
+}

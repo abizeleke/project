@@ -1,0 +1,539 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+.navigBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 9%;
+}
+.navigBar img{
+        display: none;
+    }
+.navigBar .div1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+}
+.navigBar .div1 img{
+    display: flex;
+    width: 27px;
+    border-radius: 14px;
+    margin: 0px 5px 0px 5px;
+}
+.navigBar .div1 p{
+    font-weight: 600;
+    color: rgb(59, 4, 45);
+    font-size: 17px;
+}
+.navigBar .div2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    width: 70%;
+    height: 100%;
+}
+.navigBar .div2 button{
+    padding: 4px;
+    height:25px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #68a1eb;
+    color: white;
+    font-size: 16px;
+}
+.navigBar .div3{
+    display: none;
+    width: 10%;
+}
+.navigBar .div3 .menuBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+}
+.navigBar .div3 .menuBtn img{
+    display: flex;
+    width: 40px;
+}
+.navigBar .div4{
+    display: flex;
+    width: 10%;
+}
+.navigBar .div4 .menuBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+}
+.navigBar .div4 .menuBtn img{
+    display: flex;
+    width: 40px;
+}
+.navigBar .div4{
+    display: flex;
+    width: 10px;
+}
+.dropDown1{
+    display: none;
+    position: absolute;  
+    right: 12px;
+    top: 7%;
+    z-index: 100;
+    padding: 5px;
+    width: 200px;
+    height: 90px;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+}
+.dropDown1 li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.dropDown1 li button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 5px;
+    height: 22px;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 5px;
+}
+.dropDown{
+    display: none;
+    position: absolute;  
+    right: 12px;
+    top: 7%;
+    z-index: 100;
+    padding: 5px;
+    width: 200px;
+    height: 190px;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+}
+.dropDown li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.dropDown li button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 5px;
+    height: 22px;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 5px;
+}
+.dropDown li button:hover{
+    background-color: #79acee;
+}
+.dropDown li button:focus{
+    background-color: #7eda6c;
+}
+.dropDown1 li button:hover{
+    background-color: #79acee;
+}
+.dropDown1 li button:focus{
+    background-color: #7eda6c;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 91%;
+    background-color: #fcfafa;
+    background: url("icon/img5.jpg")no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+section .topbar .img{
+    display: none;
+}
+
+.members{
+    display: flex;
+    flex: 5;
+    margin: 3px;
+    padding: 20px;
+    border-radius: 3px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e0e7e0;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+.members table{
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+.members tr{
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.members th{
+    align-items: center;
+    justify-content: center;
+    padding: 3px 10px 3px 10px;
+    background-color: #eecccc;
+}
+.members tr td{
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgb(240, 236, 236);
+    height: 30px;
+}
+.members tr .action{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+}
+.members tr .action a{
+    text-decoration: none;
+}
+.members tr td a button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+    margin-right: 8px;
+    margin-left: 8px;
+    width: 60px;
+    height: 18px;
+    background-color: aqua;
+}
+
+.approveMembers{
+    display: none;
+    flex: 5;
+    margin: 3px;
+    padding: 20px;
+    border-radius: 3px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e0e7e0;
+}
+.approveMembers table{
+
+    width: 100%;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+.approveMembers tr{
+    width: 100px;
+}
+
+.approveMembers th{
+   
+    padding: 3px 10px 3px 10px;
+    background-color: #eecccc;
+}
+.approveMembers tr td{
+
+    flex-direction: row;
+    background-color: rgb(240, 236, 236);
+    height: 30px;
+}
+.approveMembers tr .action{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+}
+.approveMembers tr .action a{
+    text-decoration: none;
+}
+.approveMembers tr td a button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+    margin-right: 8px;
+    margin-left: 8px;
+    width: 60px;
+    height: 18px;
+    background-color: aqua;
+}
+.search_result{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(169, 182, 54);
+    margin: 10px;
+}
+.search_result input{
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.search_result form .search_button{
+    border: none;
+    width: 80px;
+    height: 29px;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    background-color: rgb(76, 76, 235);
+    font-size: 15px;
+    margin-left: 10px;
+}
+.search_result form .delete_button{
+    margin: 10px;
+    border: none;
+    width: 80px;
+    height: 29px;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    background-color: rgb(76, 76, 235);
+    font-size: 15px;
+}
+.search_result .notexist{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #b92727;
+}
+.search_result .approved{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0e9b09;
+}
+.notdeleted{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #b92727;
+}
+
+.addEvents{
+    display: none;
+    background-color: rgb(183, 236, 236);
+    align-items: center;
+    justify-content: center;
+}
+.addEvents p{
+    font-size: 20px;
+    font-weight: 550;
+    color: #0c6109;
+    margin: 7px;
+
+}
+.addEvents .box1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 82%;
+    background-color: rgb(143, 207, 236);
+    border-radius: 20px;
+}
+.addEvents .box1 form{
+    display: flex;
+    flex-direction: column;
+}
+.addEvents .box1 form label{
+    font-size: 17px;
+    font-weight: 600;
+    color: #0c6109;
+    margin-left: 10px;
+}
+.addEvents .box1 form input{
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    margin: 5px;
+}
+.addEvents .box1 form .description{
+    width: 200px;
+    height: 70px;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    align-items: start;
+    justify-content: start;
+}
+.addEvents .box1 form .submit{
+    width: 120px;
+    height: 27px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background-color: rgb(7, 44, 100);
+    padding: 3px;
+    font-weight: 550;
+    margin-left: 50px;
+} 
+.changePassword{
+    display: none;
+    background-color: rgb(143, 207, 236);
+    align-items: center;
+    justify-content: center;
+}
+.changePassword form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(245, 241, 241);
+    padding: 10px;
+    border-radius: 10px;    
+}
+.changePassword form h4{
+    font-size: 18px;
+    font-weight: 550;
+    color: #23a51f;
+}
+.changePassword form .h5{
+    font-size: 18px;
+    font-weight: 550;
+    color: #a70c0c;
+}
+.changePassword form input{
+    margin: 4px;
+    padding-left: 10px;
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    font-size: 19px;
+}
+.changePassword form .secQstn{
+    margin: 4px;
+    padding-left: 10px;
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    font-size: 19px;
+}
+.changePassword form .submit1{
+    margin: 7px;
+    width: 100px;
+    height: 37px;
+    font-size: 17px;
+    font-weight: 600; 
+    color: white;
+    background-color: #3333ff;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+
+.feedback{
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.feedback .feedback1{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    height: 80%;
+    width: 400px;
+    backdrop-filter: blur(40px);
+    border: 1px solid rgb(252, 255, 91);
+    border-radius: 20px;
+    padding: 8px;
+}
+.feedback .box1{
+    display: flex;
+    flex-direction: column;
+    width: 100%px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #cfeece;
+}
+.feedback .box1 .box11{
+    display: flex;
+    margin: 2px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 550;
+    border-radius: 20px;
+}
+.feedback .box1 .content{
+    display: flex;
+    margin: 2px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: black;
+}
+
+@media(max-width: 600px){
+    .feedback .feedback1{
+        width: 310px;
+    }
+
+    .navigBar .div1{
+        width: 85%;
+        height: 100%;
+        justify-content: start;
+        padding-left: 15px;
+    }
+    .navigBar .div3 {
+        display: flex;
+        width: 15%;
+    }
+    .navigBar .div2{
+        display: none;
+    } 
+    .dropDown1{
+        display: none; 
+    }
+    .navigBar .div4{
+        display: none;
+    }     
+}
