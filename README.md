@@ -1,3 +1,5 @@
+web url = http://project001.free.nf
+
 The project is in web form.
 
 it has two actors Admin and members.
