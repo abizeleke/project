@@ -1,4 +1,4 @@
-web url = http://project001.free.nf
+web url = http://devclubmanagment.free.nf
 
 The project is in web form.
 
